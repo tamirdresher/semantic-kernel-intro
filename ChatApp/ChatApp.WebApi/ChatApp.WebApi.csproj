@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>0d9e5c7a-3eaa-493a-a52a-022e62360640</UserSecretsId>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Aspire.Azure.AI.OpenAI" Version="9.0.0-preview.5.24551.3" />
+		<PackageReference Include="Azure.Identity" Version="1.13.2" />
+		<PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.7.0" />
+		<PackageReference Include="KubernetesClient" Version="16.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.12" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.1" />
+		<PackageReference Include="Microsoft.SemanticKernel" Version="1.33.0" />
+		<PackageReference Include="Microsoft.SemanticKernel.Connectors.HuggingFace" Version="1.33.0-preview" />
+		<PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.33.0-alpha" />
+		<PackageReference Include="Microsoft.SemanticKernel.Connectors.Onnx" Version="1.33.0-alpha" />
+		<PackageReference Include="Microsoft.SemanticKernel.Plugins.OpenApi" Version="1.33.0-preview" />
+		<PackageReference Include="Microsoft.SemanticKernel.Plugins.OpenApi.Extensions" Version="1.33.0-alpha" />
+		<PackageReference Include="Microsoft.SemanticKernel.Connectors.AzureAISearch" Version="1.33.0-preview" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.2.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.2.0" />
+		<PackageReference Include="System.Text.Json" Version="9.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="ado_pipelines_openapi.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\ChatApp.Models\ChatApp.Models.csproj" />
+		<ProjectReference Include="..\ChatApp.ServiceDefaults\ChatApp.ServiceDefaults.csproj" />
+	</ItemGroup>
+
+</Project>

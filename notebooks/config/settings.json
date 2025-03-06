@@ -1,0 +1,10 @@
+{
+  "type": "azure",
+  "model": "gpt-4o",
+  "endpoint": "https://eastus.api.cognitive.microsoft.com/",
+  "apikey": "",
+  "org": "",
+
+  "embeddingApiKey": "",
+  "embeddingEndpoint": "https://eastus.api.cognitive.microsoft.com/"
+}

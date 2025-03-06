@@ -1,0 +1,125 @@
+.chatWindow {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 800px;
+    margin: auto;
+    background-color: #343541;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #222;
+}
+
+.messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background: #222;
+}
+
+.inputArea {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #40414f;
+    border-top: 1px solid #555;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #444654;
+    color: white;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #bbb;
+}
+
+button {
+    background-color: #19c37d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #15a067;
+}
+
+.userMessage {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.assistantMessage {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.messageBubble {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.userMessage .messageBubble {
+    background-color: #007aff;
+    color: white;
+    border-radius: 8px 8px 0 8px;
+}
+
+.assistantMessage .messageBubble {
+    background-color: #444654;
+    color: white;
+    border-radius: 8px 8px 8px 0;
+}
+
+.caution {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.fullMessagesToggle {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+}
+
+.fullMessages {
+    padding: 10px;
+    background-color: #222;
+    border-top: 1px solid #555;
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid #ccc; /* Optional: Add a border for distinction */
+}
