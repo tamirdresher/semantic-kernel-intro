@@ -1,30 +1,14 @@
-# TSA bug filing
+# Intro to Semantic Kenrel 
 
-TSA bug filing file has been configured: tsaoptions.json. Official builds are required to have TSA bug filing enabled by default. [Learn more](https://aka.ms/OBTSA)
+This repo include demos of Semantic Kernel in C#.
 
-# Introduction
+You can find notebook for specific topics under the [notebooks](notebooks) folder
+* Simple prompt invocation
+* Using prompts as plugins with parameters
+* KernelFunctions - allowing the AI model to invoke C# code
+* OpenAI plugins - exposing a REST API to the model by reading the OpenAPI (Swagger) file
+* Simple Conversational Chat
+* RAG - Retreival Augmented Geneneation - indexing knowledge-base documents with embeeding vector and semantic search
 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
-
-# Getting Started
-
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-
-1. Installation process
-2. Software dependencies
-3. Latest releases
-4. API references
-
-# Build and Test
-
-TODO: Describe and show how to build your code and run the tests.
-
-# Contribute
-
-TODO: Explain how other users and developers can contribute to make your code better.
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Chat application
+Under the [ChatApp](ChatApp) folder you can a fully funcational Web Chat App (ChatGPT style) that can perform operation on Kubernetes using 'kubectl' command, use Azure DevOps Piplines API and use an external knowledge base to solve issues.
